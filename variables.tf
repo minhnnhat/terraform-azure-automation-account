@@ -14,6 +14,6 @@ variable "rg_location" {
     description = "Location of resource group"
 }
 
-# variable "vm_id" {
-#     description = "Virtual machine id"
-# }
+variable "vm_id" {
+    description = "Virtual machine id"
+}
