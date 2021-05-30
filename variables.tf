@@ -1,19 +1,25 @@
-variable "modules" {
-    type = map
+variable "resource_group_name" {
+  description = "Resource group name"
+}
+
+variable "location" {
+  description = "Location of resource group"
 }
 
 variable "name" {
-    description = "Name of automation account"
+  description = "Automation account name"
 }
 
-variable "rg_name" {
-    description = "Name of resource group"
-}
-
-variable "rg_location" {
-    description = "Location of resource group"
+variable "modules" {
+  description = "Modules used in DSC"
+  type        = map(any)
 }
 
 variable "vm_id" {
-    description = "Virtual machine id"
+  description = "Virtual machine id"
+}
+
+variable "credentials" {
+  description = "Credentials used in DSC"
+  type        = map(any)
 }
