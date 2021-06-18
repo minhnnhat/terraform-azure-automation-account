@@ -15,11 +15,16 @@ variable "modules" {
   type        = map(any)
 }
 
-variable "vm_id" {
+variable "vm_ids" {
   description = "Virtual machine id"
 }
 
 variable "credentials" {
   description = "Credentials used in DSC"
+  type        = map(any)
+}
+
+variable "dscfiles" {
+  description = "DSC files used in DSC"
   type        = map(any)
 }
